@@ -94,8 +94,9 @@ const displayPhoneDetail = phone => {
     const phoneDetail = document.getElementById('phone-detail');
     phoneDetail.innerHTML = `
     <p>Release Date: ${phone.releaseDate ? phone.releaseDate : 'No Release Date '} </p>
-    <p>MainFeatures : ${phone.mainFeatures ? phone.mainFeatures.storage : 'No information found'}, ${phone.mainFeatures ? phone.mainFeatures.displaySize : 'No information found '} </p>
+    <p>MainFeatures: Storage: ${phone.mainFeatures ? phone.mainFeatures.memory : 'No information found'},displaySize: ${phone.mainFeatures ? phone.mainFeatures.displaySize : 'No information found '} </p>
     <p>Others: ${phone.others ? phone.others.WLAN : 'No information found  '} </p>
+    <p>Sensors : ${phone.mainFeatures ? phone.mainFeatures.sensors : 'No information found'} </p>
     
 `
 
